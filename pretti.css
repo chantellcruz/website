@@ -1,5 +1,8 @@
 
 @import url("https://use.typekit.net/nhb5ifb.css");
+html {
+  font-family: font-family: neue-haas-grotesk-text, sans-serif;
+}
 
 * {
   margin: 0;
@@ -59,5 +62,5 @@ soon {
 
 @font-face {
   font-family: sometimes;
-  src: url(./sometimes%20Times.woff2) format('woff2');
+  src: url('./sometimes%20Times.woff2') format('woff2');
 }
