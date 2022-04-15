@@ -62,5 +62,5 @@ soon {
 
 @font-face {
   font-family: sometimes;
-  src: url('./sometimes%20Times.woff2') format('woff2');
+  src: url('https://raw.githubusercontent.com/chantellcruz/website/blob/master/sometimes%20Times.woff2') format('woff2');
 }
