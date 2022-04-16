@@ -1,5 +1,10 @@
 
+/* keep your eyes on your own page pls */
+/* i made this from scratch, so that's p cool~ */
+
+
 @import url("https://use.typekit.net/nhb5ifb.css");
+
 html {
   font-family: font-family: neue-haas-grotesk-text, sans-serif;
 }
@@ -26,30 +31,31 @@ p {
 
 soon {
   font-family: sometimes;
-  font-size:80px;
+  font-size:160px;
+  line-height: 120px;
   color: #444444;
   text-transform: uppercase;
 }
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle
+border: 2px solid #444444;
+height: 100vh;
 }
 
-.main div {
-  display: flex;
-  flex-flow: column wrap;
-  margin: auto auto;
-  width: auto;
+.vertical-center {
   border: 0px solid white;
   text-align: center;
+  margin: 0;
   position: absolute;
-  top: 40%;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+
 }
 
 .main div p {
+  padding-top:30px;
   font-style: normal;
   line-height: 1.8em;
 }
