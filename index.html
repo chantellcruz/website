@@ -1,31 +1,378 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Developer, Photographer, Creative ⟡ Chantell Rae Cruz</title>
-        <link href="./pretti.css" type="text/css" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="./sparkle.png">
-        <link rel="stylesheet" href="https://use.typekit.net/nhb5ifb.css">
-        <style>
-  @import url("https://use.typekit.net/nhb5ifb.css");
-</style>
+<html lang="en">
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-      <div class="main">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <div class="vertical-center">
-        <soon>Launching<br>Soon</soon>
-        <p>I'm working on things. :) Check back in a little bit! I'm makin' this thing from scratch, so it might take a while.<br>
-        <b>But I'm putting a whole lot of love into it. &#9825;</b></p>
-        <img src="./sparkle.png">
-      </div>
-        
+    <title> Chantell Cruz | Full-Stack Developer </title>
+</head>
 
-      </div>
-    </body>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Chantell Cruz.</a>
 
 
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home">Home</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about">About</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#work">Work </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
 
 
-  </html>
+        <!-------------------- || HOME || -------------------->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+
+                    <!-- greeting -->
+                    <span class="home_greeting">Hello, I'm</span>
+                    <h1 class="home_name">Chantell</h1>
+                    <h3 class="home_title">Full-stack Developer + Creative</h3>
+
+
+
+                    <div class="home_buttons">
+                        <a download="" href="assets/pdf/Resume_ChantellCruz.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
+
+                    <img src="assets/img/it-me.jpg" alt="" class="pfp">
+                </div>
+
+
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/chantellcruz" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+
+                    <a href="https://github.com/chantellcruz" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                    <a href="https://twitter.com/chantellraecruz" target="_blank" class="home__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Learn more</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/photographer.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+
+                    <p class="about__pitch">
+                        Photographer turned developer.
+                    </p>
+                    <p class="about__description">
+                        I am a highly adaptive and multi-faceted developer seeking to bring creative ideas and
+                        solutions.
+                        I have the ability to think logically while being empathic and listening to the needs of
+                        individuals.
+                    </p>
+                    <p class="likes__dislikes">
+                        <b>Likes:</b> weenie dogs, video games, hiking, baking, photography (duh), coffee + tea,
+                        running, plants, writing letters.<br>
+                        <b>Dislikes:</b> judgemental people, being late, anything horror.
+                    </p>
+                    <a href="#contact" class="button">Contact me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My skills &</span>
+            <h2 class="section__title">Experience</h2>
+
+            <div class="skills__container container grid">
+
+                <!--FRONT-END-->
+                <div class="skills__content">
+                    <h3 class="skills__title">Languages</h3>
+
+                    <div class="skills__box">
+                        <!--LEFT-->
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">HTML/CSS</h3>
+                                    <span class="skills__level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--RIGHT-->
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--BACK-END-->
+                <div class="skills__content">
+                    <h3 class="skills__title">Programs & Misc.</h3>
+                    <div class="skills__box">
+                        <!--LEFT-->
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">Lightroom</h3>
+                                    <span class="skills__level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">Photoshop</h3>
+                                    <span class="skills__level">Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--RIGHT-->
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">Photography</h3>
+                                    <span class="skills__level">Expert</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bx-star'></i>
+                                <div>
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <div class="about__data">
+                <center>
+                    <p class="about__description">
+                        Currently under construction! Please check out my GitHub for recent projects.
+                    </p>
+
+                    <a href="https://github.com/chantellcruz" class="button">GitHub</a>
+                </center>
+
+            </div>
+
+
+
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title">Contact Me</h2>
+                <center><p>Simply fill out the form below and I'll get back to you as soon as I can!<br><br></p></center>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+
+                        <div class="contact__info">
+
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon'></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">chantellraecruz@gmail.com</span>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bxl-whatsapp contact__card-icon'></i>
+                                <h3 class="contact__card-title">Phone</h3>
+                                <span class="contact__card-data">904-718-4192</span>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bxl-twitter contact__card-icon'></i>
+                                <h3 class="contact__card-title">Twitter</h3>
+                                <span class="contact__card-data">chantellraecruz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+
+                        <form action="" class="contact__form">
+                            <br>
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Full Name</label>
+                                <input type="text" placeholder="First & Last Name" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Email</label>
+                                <input type="email" placeholder="Your email" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Message</label>
+                                <textarea name="" id="" cols="30" rows="10"
+                                    placeholder="There is no such thing as too many details. :-)"
+                                    class="contact__form-input"></textarea>
+                            </div>
+
+                            <button class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Chantell Cruz.</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer__link">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/chantellcruz" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a href="https://github.com/chantellcruz" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="https://twitter.com/chantellraecruz" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; Chantell Cruz 2023. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
