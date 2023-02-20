@@ -1,0 +1,51 @@
+/*========== ˗ˏˋ ✿ D A R K  T H E M E  C O L O R S ✿ ´ˎ˗ ==========*/
+:root {
+    /* dark-theme colors */
+    --dark-primary-color: #ADBAC7;
+    --dark-primary-color-alt: #444C56;
+    --dark-font-color: #ADBAC7;
+    --dark-title-color: #ADBAC7;
+    --dark-subtitle-color: #444C56;
+    --dark-text-color: #ADBAC7;
+    --dark-text-color-light: #444444;
+    --dark-bg-color: #22272E;
+    --dark-container-color: #2a3038;
+}
+
+body.dark-theme {
+    --text-color: var(--dark-font-color);
+    background-color: var(--dark-bg-color);
+    transition: .3s;
+}
+
+.dark-theme h1, .dark-theme h2, .dark-theme h3 {
+    color: var(--dark-font-color);
+ }
+
+.dark-theme #theme-button {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+    color: var(--dark-font-color);
+}
+
+.dark-theme #theme-button:hover {
+    color: var(--dark-primary-color-alt);
+}
+
+.dark-theme .navigation {
+    background-color: var(--dark-bg-color);
+    transition: .3s;
+}
+
+.dark-theme a:hover {
+    --text-color: var(--dark-primary-color-alt);
+}
+
+.dark-theme .logo {
+    color: var(--dark-font-color);
+}
+
+.dark-theme .logo {
+    --text-color: var(--dark-font-color);
+}

@@ -1,0 +1,35 @@
+/*==========  ˗ˏˋ ✿ B U T T O N S ✿ ´ˎ˗ ==========*/
+.button {
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+
+.button:hover {
+    border: 2px solid var(--primary-color-alt);
+    background-color: var(--primary-color-alt);
+    color: var(--bg-color);
+    cursor: var(--default-cursor);
+}
+
+.button-ghost {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/*==========  ˗ˏˋ ✿ T H E M E  T O G G L E ✿ ´ˎ˗ ==========*/
+#theme-button {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#theme-button:hover {
+    color: var(--primary-color-alt);
+}
