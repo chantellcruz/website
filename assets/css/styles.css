@@ -255,7 +255,7 @@ p a:hover {
 
 /*==========  ˗ˏˋ ✿ S K I L L S ✿ ´ˎ˗ ==========*/
 .skills-container {
-  grid-template-columns: repeat(3, 380px);
+  grid-template-columns: repeat(2, 400px);
   column-gap: 3rem;
   justify-content: center;
   padding-top: 1rem;
@@ -272,7 +272,7 @@ p a:hover {
   font-weight: var(--font-medium);
   color: var(--first-color);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .skills-box {
@@ -293,7 +293,7 @@ p a:hover {
 .skills-bar .bar .progress-line {
   position: relative;
   height: 10px;
-  width: 300px;
+  width: 330px;
   background: var(--container-color-accent);
   border-radius: 10px;
   /* transform: scaleX(0);

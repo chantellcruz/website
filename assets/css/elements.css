@@ -64,6 +64,16 @@
     width: 35%;
 }
 
+.progress-line .agile {
+    width: 88%;
+}
+
+
+.progress-line .git {
+    width: 80%;
+}
+
+
 .progress-line .lightroom {
     width: 100%;
 }
@@ -84,41 +94,7 @@
     width: 85%;
 }
 
-.progress-line .obs {
-    width: 69%;
-}
 
-.progress-line .procreate {
-    width: 55%;
-}
-
-.progress-line .agile {
-    width: 88%;
-}
-
-.progress-line .adaptability {
-    width: 92%;
-}
-
-.progress-line .communication {
-    width: 95%;
-}
-
-.progress-line .time-management {
-    width: 85%;
-}
-
-.progress-line .enthusiasm {
-    width: 95%;
-}
-
-.progress-line .empathy {
-    width: 99%;
-}
-
-.progress-line .teamwork {
-    width: 80%;
-}
 
 
 /*==========  ˗ˏˋ ✿ S C R O L L B A R ✿ ´ˎ˗ ==========*/
