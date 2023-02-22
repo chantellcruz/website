@@ -1,36 +1,100 @@
 /*========== ˗ˏˋ ✿ D A R K  T H E M E  C O L O R S ✿ ´ˎ˗ ==========*/
 :root {
     /* dark-theme colors */
-    --dark-primary-color: #ADBAC7;
-    --dark-primary-color-alt: #444C56;
-    --dark-font-color: #ADBAC7;
-    --dark-title-color: #ADBAC7;
-    --dark-subtitle-color: #444C56;
-    --dark-text-color: #ADBAC7;
-    --dark-text-color-light: #444444;
-    --dark-bg-color: #22272E;
-    --dark-container-color: #2a3038;
+    --dark-primary-color: #bfa3b3;
+    --dark-primary-color-alt: #4a5154;
+    --dark-font-color: #bbbbbb;
+    --dark-font-alt: #3b414d;
+    --dark-font-white: #eeeeee;
+    --dark-title-color: #b392ac;
+    --dark-subtitle-color: #60696d;
+    --dark-accent-color: #f4dcbc;
+    --dark-accent-color-2: #f571a1;
+    --dark-accent-color-3: #66bbd6;
+    --dark-accent-color-4: #b193d9;
+    --dark-bg-color: #282c34;
+    --dark-container-color: #33373f;
 }
 
+/*==========  ˗ˏˋ ✿ M A I N ✿ ´ˎ˗ ==========*/
 body.dark-theme {
-    --text-color: var(--dark-font-color);
+    color: var(--dark-font-color);
     background-color: var(--dark-bg-color);
     transition: .3s;
 }
 
-.dark-theme h1, .dark-theme h2, .dark-theme h3 {
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
     color: var(--dark-font-color);
- }
+}
 
+.dark-theme a {
+    color: var(--dark-accent-color-3);
+    transition: .3s;
+}
+
+
+.dark-theme a:hover {
+    --text-color: var(--dark-subtitle-color);
+    transition: .3s;
+}
+
+.dark-theme .section-subtitle {
+    color: var(--dark-subtitle-color);
+}
+
+.dark-theme .section-title {
+    color: var(--dark-title-color);
+}
+
+
+
+/*==========  ˗ˏˋ ✿ T H E M E  T O G G L E ✿ ´ˎ˗ ==========*/
 .dark-theme #theme-button {
     font-size: 1.25rem;
     cursor: pointer;
     transition: .3s;
-    color: var(--dark-font-color);
+    color: var(--dark-primary-color);
 }
 
 .dark-theme #theme-button:hover {
     color: var(--dark-primary-color-alt);
+}
+
+/*==========  ˗ˏˋ ✿ B U T T O N S ✿ ´ˎ˗ ==========*/
+.dark-theme .button {
+    display: inline-block;
+    border: 2px solid var(--dark-primary-color);
+    background-color: var(--dark-primary-color);
+    color: var(--dark-bg-color);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+
+.dark-theme .button:hover {
+    border: 2px solid var(--dark-subtitle-color);
+    background-color: var(--dark-subtitle-color);
+    color: var(--dark-bg-color);
+    cursor: var(--default-cursor);
+}
+
+.dark-theme .button-ghost {
+    background-color: transparent;
+    border: 2px solid var(--dark-primary-color);
+    color: var(--dark-primary-color);
+}
+
+/*==========  ˗ˏˋ ✿ N A V I G A T I O N ✿ ´ˎ˗ ==========*/
+.dark-theme .logo {
+    color: var(--dark-primary-color);
+}
+
+.dark-theme .logo:hover {
+    opacity: 0.8;
+    transition: .3s;
 }
 
 .dark-theme .navigation {
@@ -38,14 +102,34 @@ body.dark-theme {
     transition: .3s;
 }
 
-.dark-theme a:hover {
-    --text-color: var(--dark-primary-color-alt);
-}
-
-.dark-theme .logo {
+.dark-theme .nav-links a {
     color: var(--dark-font-color);
 }
 
-.dark-theme .logo {
-    --text-color: var(--dark-font-color);
+/*==========  ˗ˏˋ ✿ H E A D E R ✿ ´ˎ˗ ==========*/
+.dark-theme .name {
+    color: var(--dark-primary-color);
+}
+
+/*==========  ˗ˏˋ ✿ A B O U T ✿ ´ˎ˗ ==========*/
+.dark-theme .about-pitch {
+    color: var(--dark-font-white);
+}
+
+/*==========  ˗ˏˋ ✿ S K I L L S ✿ ´ˎ˗ ==========*/
+
+.dark-theme .skills-content {
+    background-color: var(--dark-container-color);
+}
+
+.dark-theme .skills-bar .bar .progress-line {
+    background: var(--dark-primary-color-alt);
+}
+
+.dark-theme .bar .progress-line span {
+    background: var(--dark-title-color);
+}
+
+.dark-theme .skills-name {
+    color: var(--dark-font-white);
 }

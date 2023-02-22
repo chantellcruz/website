@@ -31,5 +31,108 @@
 }
 
 #theme-button:hover {
-    color: var(--primary-color-alt);
+    opacity: 0.6;
+    transition: .3s;
+}
+
+/*==========  ˗ˏˋ ✿ E X P  B A R ✿ ´ˎ˗ ==========*/
+.progress-line .java {
+    width: 75%;
+}
+
+.progress-line .sql {
+    width: 75%;
+}
+
+.progress-line .html-css {
+    width: 95%;
+}
+
+.progress-line .javascript {
+    width: 50%;
+}
+
+.progress-line .react {
+    width: 60%;
+}
+
+.progress-line .bootstrap {
+    width: 80%;
+}
+
+.progress-line .angular {
+    width: 35%;
+}
+
+.progress-line .lightroom {
+    width: 100%;
+}
+
+.progress-line .photoshop {
+    width: 90%;
+}
+
+.progress-line .photomechanic {
+    width: 85%;
+}
+
+.progress-line .figma {
+    width: 35%;
+}
+
+.progress-line .ms-office {
+    width: 85%;
+}
+
+.progress-line .obs {
+    width: 69%;
+}
+
+.progress-line .procreate {
+    width: 55%;
+}
+
+.progress-line .agile {
+    width: 88%;
+}
+
+.progress-line .adaptability {
+    width: 92%;
+}
+
+.progress-line .communication {
+    width: 95%;
+}
+
+.progress-line .time-management {
+    width: 85%;
+}
+
+.progress-line .enthusiasm {
+    width: 95%;
+}
+
+.progress-line .empathy {
+    width: 99%;
+}
+
+.progress-line .teamwork {
+    width: 80%;
+}
+
+
+/*==========  ˗ˏˋ ✿ S C R O L L B A R ✿ ´ˎ˗ ==========*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color-alt);
+    border-radius: 0rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color-alt);
 }
