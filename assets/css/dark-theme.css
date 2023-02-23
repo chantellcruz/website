@@ -75,8 +75,8 @@ body.dark-theme {
 }
 
 .dark-theme .button:hover {
-    border: 2px solid var(--dark-subtitle-color);
-    background-color: var(--dark-subtitle-color);
+    border: 2px solid var(--dark-title-color);
+    background-color: var(--dark-title-color);
     color: var(--dark-bg-color);
     cursor: var(--default-cursor);
 }
@@ -94,7 +94,7 @@ body.dark-theme {
 
 .dark-theme .logo:hover {
     opacity: 0.8;
-    transition: .3s;
+    transition: .4s;
 }
 
 .dark-theme .navigation {
@@ -122,6 +122,10 @@ body.dark-theme {
     background-color: var(--dark-container-color);
 }
 
+.dark-theme .skills-title {
+    background-color: var(--dark-container-color);
+}
+
 .dark-theme .skills-bar .bar .progress-line {
     background: var(--dark-primary-color-alt);
 }
@@ -131,5 +135,15 @@ body.dark-theme {
 }
 
 .dark-theme .skills-name {
+    color: var(--dark-font-white);
+}
+
+/*==========  ˗ˏˋ ✿ P O R T F O L I O ✿ ´ˎ˗ ==========*/
+.dark-theme .project-card,
+.dark-theme .active-work {
+    background-color: var(--dark-container-color);
+}
+
+.dark-theme .portfolio-item {
     color: var(--dark-font-white);
 }
