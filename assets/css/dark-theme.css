@@ -1,19 +1,14 @@
 /*========== ˗ˏˋ ✿ D A R K  T H E M E  C O L O R S ✿ ´ˎ˗ ==========*/
 :root {
     /* dark-theme colors */
-    --dark-primary-color: #bfa3b3;
-    --dark-primary-color-alt: #4a5154;
+    --dark-primary-color: #b392ac;
+    --dark-secondary-color: #6b7477;
+    --dark-accent-color: #bfa3b3;
     --dark-font-color: #bbbbbb;
-    --dark-font-alt: #3b414d;
     --dark-font-white: #eeeeee;
-    --dark-title-color: #b392ac;
-    --dark-subtitle-color: #60696d;
-    --dark-accent-color: #f4dcbc;
-    --dark-accent-color-2: #f571a1;
-    --dark-accent-color-3: #66bbd6;
-    --dark-accent-color-4: #b193d9;
     --dark-bg-color: #282c34;
     --dark-container-color: #33373f;
+    --dark-container-accent: #3d414b;
 }
 
 /*==========  ˗ˏˋ ✿ M A I N ✿ ´ˎ˗ ==========*/
@@ -30,25 +25,22 @@ body.dark-theme {
 }
 
 .dark-theme a {
-    color: var(--dark-accent-color-3);
+    color: var(--dark-primary-color);
     transition: .3s;
 }
 
-
 .dark-theme a:hover {
-    --text-color: var(--dark-subtitle-color);
+    --text-color: var(--dark-secondary-color);
     transition: .3s;
 }
 
 .dark-theme .section-subtitle {
-    color: var(--dark-subtitle-color);
+    color: var(--dark-secondary-color);
 }
 
 .dark-theme .section-title {
-    color: var(--dark-title-color);
+    color: var(--dark-primary-color);
 }
-
-
 
 /*==========  ˗ˏˋ ✿ T H E M E  T O G G L E ✿ ´ˎ˗ ==========*/
 .dark-theme #theme-button {
@@ -59,7 +51,7 @@ body.dark-theme {
 }
 
 .dark-theme #theme-button:hover {
-    color: var(--dark-primary-color-alt);
+    color: var(--dark-accent-color);
 }
 
 /*==========  ˗ˏˋ ✿ B U T T O N S ✿ ´ˎ˗ ==========*/
@@ -75,8 +67,8 @@ body.dark-theme {
 }
 
 .dark-theme .button:hover {
-    border: 2px solid var(--dark-title-color);
-    background-color: var(--dark-title-color);
+    border: 2px solid var(--dark-accent-color);
+    background-color: var(--dark-accent-color);
     color: var(--dark-bg-color);
     cursor: var(--default-cursor);
 }
@@ -87,6 +79,17 @@ body.dark-theme {
     color: var(--dark-primary-color);
 }
 
+/*==========  ˗ˏˋ ✿ H I G H L I G H T ✿ ´ˎ˗ ==========*/
+.dark-theme ::-moz-selection {
+    color: var(--dark-bg-color);
+    background: var(--dark-primary-color);
+}
+
+.dark-theme ::selection {
+    color: var(--dark-bg-color);
+    background: var(--dark-primary-color);
+}
+
 /*==========  ˗ˏˋ ✿ N A V I G A T I O N ✿ ´ˎ˗ ==========*/
 .dark-theme .logo {
     color: var(--dark-primary-color);
@@ -94,7 +97,6 @@ body.dark-theme {
 
 .dark-theme .logo:hover {
     opacity: 0.8;
-    transition: .4s;
 }
 
 .dark-theme .navigation {
@@ -127,11 +129,11 @@ body.dark-theme {
 }
 
 .dark-theme .skills-bar .bar .progress-line {
-    background: var(--dark-primary-color-alt);
+    background: var(--dark-container-accent);
 }
 
 .dark-theme .bar .progress-line span {
-    background: var(--dark-title-color);
+    background: var(--dark-primary-color);
 }
 
 .dark-theme .skills-name {
@@ -144,6 +146,33 @@ body.dark-theme {
     background-color: var(--dark-container-color);
 }
 
-.dark-theme .portfolio-item {
+.dark-theme .project-title {
     color: var(--dark-font-white);
+}
+
+/*==========  ˗ˏˋ ✿ C O N T A C T ✿ ´ˎ˗ ==========*/
+.dark-theme .contact-card {
+    background-color: var(--dark-container-color);
+    padding: 2rem;
+    border-radius: .75rem;
+    text-align: center;
+}
+
+.dark-theme .contact-card-icon {
+    color: var(--dark-primary-color);
+}
+
+.dark-theme .contact-card-title {
+    color: var(--dark-font-white);
+}
+
+.dark-theme .contact-form-input {
+    background: var(--dark-bg-color);
+    color: var(--dark-font-color-color);
+    border: 2px solid var(--dark-primary-color);
+}
+
+.dark-theme .contact-form-tag {
+    color: var(--dark-font-white);
+    background: var(--dark-bg-color);
 }

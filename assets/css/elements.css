@@ -1,3 +1,16 @@
+/*==========  ˗ˏˋ ✿ T H E M E  T O G G L E ✿ ´ˎ˗ ==========*/
+#theme-button {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#theme-button:hover {
+    opacity: 0.6;
+    transition: .3s;
+    cursor: var(--default-cursor);
+}
+
 /*==========  ˗ˏˋ ✿ B U T T O N S ✿ ´ˎ˗ ==========*/
 .button {
     display: inline-block;
@@ -21,18 +34,6 @@
     background-color: transparent;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
-}
-
-/*==========  ˗ˏˋ ✿ T H E M E  T O G G L E ✿ ´ˎ˗ ==========*/
-#theme-button {
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: .3s;
-}
-
-#theme-button:hover {
-    opacity: 0.6;
-    transition: .3s;
 }
 
 /*==========  ˗ˏˋ ✿ E X P  B A R ✿ ´ˎ˗ ==========*/
@@ -68,11 +69,9 @@
     width: 88%;
 }
 
-
 .progress-line .git {
     width: 80%;
 }
-
 
 .progress-line .lightroom {
     width: 100%;
@@ -94,9 +93,6 @@
     width: 85%;
 }
 
-
-
-
 /*==========  ˗ˏˋ ✿ S C R O L L B A R ✿ ´ˎ˗ ==========*/
 ::-webkit-scrollbar {
     width: .6rem;
@@ -111,4 +107,15 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--primary-color-alt);
+}
+
+/*==========  ˗ˏˋ ✿ H I G H L I G H T ✿ ´ˎ˗ ==========*/
+::-moz-selection {
+    color: var(--bg-color);
+    background: var(--secondary-color);
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--secondary-color);
 }
