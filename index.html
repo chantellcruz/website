@@ -351,22 +351,30 @@ d88' `"Y8 d88' `88b d88' `888  d88' `88b d88' `888        `88. `88.  .8'  `888  
 
                 <!-- left side -->
                 <div class="contact-content">
-                    <form class="contact-form" action="https://formsubmit.co/chantellraecruz@gmail.com" method="POST">
+                    <form class="contact-form" action="https://formsubmit.co/cbff162988196c22417be95e0abd35d2"
+                        method="POST">
+                        <!-- honeypot -->
+                        <input type="text" name="_honey" style="display: none;">
+                        <!-- disable capcha -->
+                        <input type="hidden" name="_capcha" value="false">
+                        <!-- success note -->
+                        <input type="hidden" name="_next" value="https://chantellcruz.com/success.html">
                         <div class="contact-form-div">
                             <label for="" class="contact-form-tag">Full Name</label>
-                            <input type="text" placeholder="First & Last Name" class="contact-form-input">
+                            <input type="text" class="contact-form-input" name="Name" id="name"
+                                placeholder="First & Last Name" required>
                         </div>
 
                         <div class="contact-form-div">
                             <label for="" class="contact-form-tag">Email</label>
-                            <input type="email" placeholder="Your email" class="contact-form-input">
+                            <input type="email" class="contact-form-input" name="Email" id="email"
+                                placeholder="Your email" required>
                         </div>
 
                         <div class="contact-form-div contact-form-area">
                             <label for="" class="contact-form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10"
-                                placeholder="There is no such thing as too many details."
-                                class="contact-form-input"></textarea>
+                            <textarea class="contact-form-input" name="Message" id="message" cols="30" rows="10"
+                                placeholder="There is no such thing as too many details. ☻" required></textarea>
                         </div>
 
                         <button class="button" id="contact-button">Send Message</button>
