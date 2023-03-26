@@ -26,13 +26,11 @@
     text-align: left;
   }
 
-
 }
 
 
 /* MACBOOK AIR */
 @media screen and (min-width:769px) {
-
   .section {
     padding: 10rem 0 2rem;
   }
@@ -98,12 +96,18 @@
     grid-template-columns: repeat(2, max-content);
   }
 
-  .contact-form, #contact-button {
+  .contact-form,
+  #contact-button {
     width: 360px;
   }
 
   .contact-form-mobile {
     display: none;
+  }
+
+  .success-message {
+    place-self: center;
+    max-width: 50vw;
   }
 
 }
@@ -154,78 +158,27 @@
     column-gap: .25rem;
   }
 
-
-  #form, #twitter {
+  #form,
+  #twitter {
     display: none;
   }
-}
+  
+  .success-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+  }
 
+  .success-message {
+    place-self: baseline normal;
+    border: 1px solid red;
+  }
 
+  .success-message h1 {
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+  }
 
-
-/*=============== WORK ===============*/
-.work__container{
-  padding-top: 1rem;
-}
-
-.work__filters{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: .75rem;
-  margin-bottom: 2rem;
-}
-
-.work__item{
-  cursor: pointer;
-  color: var(--title-color);
-  padding: .25rem .75rem;
-  font-weight: var(--font-medium);
-  border-radius: .5rem;
-}
-
-.work__card{
-  background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.work__img{
-  border-radius: 1rem;
-  margin-bottom: .75rem;
-}
-
-.work__title{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: .25rem;
-}
-
-.work__button{
-  width: max-content;
-  color: var(--first-color);
-  font-size: var(--small-font-size);
-  display: flex;
-  align-items: center;
-  column-gap: .25rem;
-}
-
-.work__button:hover .work__icon{
-  transform: translateX(.25rem);
-}
-
-.work__icon{
-   font-size: 1rem;
-   transition: .4s;
-}
-
-/* Active item work*/
-.active__work{
-  background-color: var(--first-color);
-  color: var(--body-color);
-}
-
-.active-model{
-  opacity: 1;
-  visibility: visible;
 }

@@ -36,6 +36,25 @@
     color: var(--primary-color);
 }
 
+/*==========  ˗ˏˋ ✿ F O R M   S U B M I T   S U C C E S S ✿ ´ˎ˗ ==========*/
+.success-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
+
+.success-message h1 {
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+}
+
+.success-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5em;
+}
+
 /*==========  ˗ˏˋ ✿ S C R O L L B A R ✿ ´ˎ˗ ==========*/
 ::-webkit-scrollbar {
     width: .6rem;
