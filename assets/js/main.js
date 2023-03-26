@@ -1,150 +1,49 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-function ScrollHeader(){
-    const header = document.getElementById('header');
-
-    if(this.scrollY >= 50){
-        header.classList.add('scroll-header');
-    } else{
-        header;
-    }
-
-}
-
-window.addEventListener('scroll', ScrollHeader);
-
-/*=============== SERVICES MODAL ===============*/
-const ModelViews = document.querySelectorAll('.services__model'),
-      ModelBtns = document.querySelectorAll('.services__button'),
-      ModelClose = document.querySelectorAll('.services__model-close');
-
-let Model = function(modelClick){
-    ModelViews[modelClick].classList.add('active-model');
-}
-
-ModelBtns.forEach((mb, i) =>{
-    mb.addEventListener('click', () => {
-        Model(i);
-    })
-});
-
-ModelClose.forEach((mc) =>{
-    mc.addEventListener('click', () => {
-        ModelViews.forEach((mv) => {
-            mv.classList.remove('active-model')
-        })
-    })
-
-});
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-let mixerPortfolio = mixitup('.work__container', {
-    selectors: {
-        target: '.work__card'
-    },
-    animation: {
-        duration: 300
-    }
-});
-
-/* Link active work */ 
-const linkWork = document.querySelectorAll('.work__item');
-
-function activeWork(){
-    linkWork.forEach(l=> l.classList.remove('active__work'));
-    this.classList.add('active__work');
-}
-
-linkWork.forEach(l=> l.addEventListener('click', activeWork));
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-var swiperTestimonial = new Swiper(".testimonial__container", {
-    spaceBetween: 24,
-    loop: true,
-    grabCursor: true,
-
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    breakpoints: {
-        576: {
-          spaceBetween: 20,
-        },
-        
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 48,
-        },
-
-      },
-  });
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
-    
-function scrollActive(){
-  	const scrollY = window.pageYOffset
-
-	sections.forEach(current =>{
-		const sectionHeight = current.offsetHeight,
-			  sectionTop = current.offsetTop - 58,
-			  sectionId = current.getAttribute('id');
-			//   sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-
-		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-			document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
-            // sectionsClass.classList.add('active-link')
-		}else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
-			// sectionsClass.classList.remove('active-link')
-		}                                                    
-	});
-}
-window.addEventListener('scroll', scrollActive);
-
-/*=============== LIGHT DARK THEME ===============*/ 
+/*========== ˗ˏˋ ✿ T H E M E  T O G G L E ✿ ´ˎ˗ ==========*/
 const themeButton = document.getElementById('theme-button')
-const lightTheme = 'light-theme'
-const iconTheme = 'bx-moon'
+const darkTheme = 'dark-theme'
+const iconTheme = 'bxs-sun'
 
-// Previously selected topic (if user selected)
+// previously selected theme
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the light-theme class
-const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'light' : 'dark'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-sun' : 'bx-moon'
+// otain current theme by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bxs-moon' : 'bx bxs-sun'
 
-// We validate if the user previously chose a topic
+// validate if the user previously chose a theme
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
-  document.body.classList[selectedTheme === 'light' ? 'add' : 'remove'](lightTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'bx bxs-moon' ? 'add' : 'remove'](iconTheme)
 }
-// Activate / deactivate the theme manually with the button
+// activate / deactivate the theme with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the light / icon theme
-    document.body.classList.toggle(lightTheme)
+    // add or remove the dark icon theme
+    document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
+    // save the theme and that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
 
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true
+/*========== ˗ˏˋ ✿ P O R T F O L I O   F I L T E R ✿ ´ˎ˗ ==========*/
+let filteredPortfolio = mixitup('.portfolio-container', {
+  selectors: {
+      target: '.project-card'
+  },
+  animation: {
+      duration: 300
+  }
 });
 
-sr.reveal(`.home__data`);
-sr.reveal(`.home__handle`, {delay: 700});
-sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'});
+/* Link active work */ 
+const linkWork = document.querySelectorAll('.portfolio-item');
+
+function activeFilter(){
+  linkWork.forEach(l=> l.classList.remove('active-filter'));
+  this.classList.add('active-filter');
+}
+
+linkWork.forEach(l=> l.addEventListener('click', activeFilter));
