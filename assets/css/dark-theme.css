@@ -83,11 +83,29 @@ body.dark-theme {
 .dark-theme ::-moz-selection {
     color: var(--dark-bg-color);
     background: var(--dark-primary-color);
+    transition: .4s;
 }
 
 .dark-theme ::selection {
     color: var(--dark-bg-color);
     background: var(--dark-primary-color);
+}
+
+
+/*==========  ˗ˏˋ ✿ S C R O L L B A R ✿ ´ˎ˗ ==========*/
+.dark-theme::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background: var(--dark-bg-color);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    background-color: var(--dark-primary-color);
+    border-radius: .5rem;
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dark-accent-color);
 }
 
 /*==========  ˗ˏˋ ✿ N A V I G A T I O N ✿ ´ˎ˗ ==========*/
@@ -146,9 +164,29 @@ body.dark-theme {
     background-color: var(--dark-container-color);
 }
 
+.dark-theme .active-filter {
+    background-color: var(--dark-container-accent);
+    color: var(--dark-font-white);
+}
+
+.dark-theme .portfolio-item {
+    color: var(--dark-font-color);
+}
+
 .dark-theme .project-title {
     color: var(--dark-font-white);
 }
+
+.dark-theme .portfolio-button {
+    background-color: var(--dark-container-accent);
+    color: var(--dark-primary-color);
+}
+
+.dark-theme .portfolio-button:hover {
+    background-color: var(--dark-primary-color);
+    color: var(--dark-font-white);
+}
+
 
 /*==========  ˗ˏˋ ✿ C O N T A C T ✿ ´ˎ˗ ==========*/
 .dark-theme .contact-card {

@@ -1,0 +1,231 @@
+/*==========  ˗ˏˋ ✿ R E S P O N S I V E N E S S ✿ ´ˎ˗ ==========*/
+/* FOR THE WIDE BOIS ONLY */
+@media screen and (min-width:992px) {
+  .header-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 10rem 0 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 3.5rem;
+  }
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .about-txt {
+    text-align: left;
+  }
+
+
+}
+
+
+/* MACBOOK AIR */
+@media screen and (min-width:769px) {
+
+  .section {
+    padding: 10rem 0 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: none;
+  }
+
+  .header-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 4rem;
+  }
+
+  .pfp {
+    width: 300px;
+    border-radius: 300px;
+    justify-self: center;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .about-txt {
+    text-align: left;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+
+  .skills-content {
+    padding: 3rem 0;
+  }
+
+  .skills-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+    flex-direction: row;
+  }
+
+  .skills-title {
+    font-size: var(--h3-font-size);
+  }
+
+  .portfolio-img {
+    width: 429px;
+  }
+
+  .portfolio-container {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .contact-form, #contact-button {
+    width: 360px;
+  }
+
+  .contact-form-mobile {
+    display: none;
+  }
+
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width:600px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .pfp {
+    border-radius: 50%;
+    width: 200px;
+  }
+
+  .home_social {
+    display: none;
+  }
+
+  .skills-name {
+    font-size: var(--small-font-size);
+  }
+
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    background: var(--container-color-accent);
+    border-radius: 10px;
+    width: 60vw;
+    /* transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards; */
+  }
+
+  .services__container {
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+
+  .portfolio-item {
+    font-size: var(--small-font-size);
+  }
+
+  .portfolio-filters {
+    column-gap: .25rem;
+  }
+
+
+  #form, #twitter {
+    display: none;
+  }
+}
+
+
+
+
+/*=============== WORK ===============*/
+.work__container{
+  padding-top: 1rem;
+}
+
+.work__filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 2rem;
+}
+
+.work__item{
+  cursor: pointer;
+  color: var(--title-color);
+  padding: .25rem .75rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+}
+
+.work__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.work__img{
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+.work__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.work__button{
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.work__button:hover .work__icon{
+  transform: translateX(.25rem);
+}
+
+.work__icon{
+   font-size: 1rem;
+   transition: .4s;
+}
+
+/* Active item work*/
+.active__work{
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
+
+.active-model{
+  opacity: 1;
+  visibility: visible;
+}

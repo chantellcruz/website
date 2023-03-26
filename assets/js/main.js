@@ -14,7 +14,7 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bxs
 // validate if the user previously chose a theme
 if (selectedTheme) {
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'bx bxs-sun' ? 'add' : 'remove'](iconTheme)
+  themeButton.classList[selectedIcon === 'bx bxs-moon' ? 'add' : 'remove'](iconTheme)
 }
 // activate / deactivate the theme with the button
 themeButton.addEventListener('click', () => {
@@ -25,3 +25,25 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+/*========== ˗ˏˋ ✿ P O R T F O L I O   F I L T E R ✿ ´ˎ˗ ==========*/
+let filteredPortfolio = mixitup('.portfolio-container', {
+  selectors: {
+      target: '.project-card'
+  },
+  animation: {
+      duration: 300
+  }
+});
+
+/* Link active work */ 
+const linkWork = document.querySelectorAll('.portfolio-item');
+
+function activeFilter(){
+  linkWork.forEach(l=> l.classList.remove('active-filter'));
+  this.classList.add('active-filter');
+}
+
+linkWork.forEach(l=> l.addEventListener('click', activeFilter));

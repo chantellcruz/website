@@ -36,77 +36,21 @@
     color: var(--primary-color);
 }
 
-/*==========  ˗ˏˋ ✿ E X P  B A R ✿ ´ˎ˗ ==========*/
-.progress-line .java {
-    width: 75%;
-}
-
-.progress-line .sql {
-    width: 75%;
-}
-
-.progress-line .html-css {
-    width: 95%;
-}
-
-.progress-line .javascript {
-    width: 50%;
-}
-
-.progress-line .react {
-    width: 60%;
-}
-
-.progress-line .bootstrap {
-    width: 80%;
-}
-
-.progress-line .angular {
-    width: 35%;
-}
-
-.progress-line .agile {
-    width: 88%;
-}
-
-.progress-line .git {
-    width: 80%;
-}
-
-.progress-line .lightroom {
-    width: 100%;
-}
-
-.progress-line .photoshop {
-    width: 90%;
-}
-
-.progress-line .photomechanic {
-    width: 85%;
-}
-
-.progress-line .figma {
-    width: 35%;
-}
-
-.progress-line .ms-office {
-    width: 85%;
-}
-
 /*==========  ˗ˏˋ ✿ S C R O L L B A R ✿ ´ˎ˗ ==========*/
 ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
-    background-color: var(--body-color);
+    background-color: var(--bg-color);
+    transition: .4s;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--primary-color-alt);
-    border-radius: 0rem;
+    background-color: var(--secondary-color);
+    border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--primary-color-alt);
+    background-color: var(--subtitle-color);
 }
 
 /*==========  ˗ˏˋ ✿ H I G H L I G H T ✿ ´ˎ˗ ==========*/
