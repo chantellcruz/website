@@ -234,3 +234,23 @@ body.dark-theme {
     color: var(--dark-font-white);
     background: var(--dark-bg-color);
 }
+
+/*==========  ˗ˏˋ ✿ F O O T E R ✿ ´ˎ˗ ==========*/
+.dark-theme .footer {
+    background-color: var(--dark-container-color);
+  }
+  
+  .dark-theme .footer-link,
+  .dark-theme .footer-social-link {
+    color: var(--dark-font-white);
+  }
+  
+  .dark-theme .footer-title {
+    color: var(--dark-primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .dark-theme  .copyright {
+    color: var(--dark-font-color);
+  }
