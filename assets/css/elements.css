@@ -11,6 +11,12 @@
     cursor: var(--default-cursor);
 }
 
+.change-theme{
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+
 /*==========  ˗ˏˋ ✿ B U T T O N S ✿ ´ˎ˗ ==========*/
 .button {
     display: inline-block;

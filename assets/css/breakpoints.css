@@ -64,24 +64,22 @@
   }
 
   .skills-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,350px);
     column-gap: 3rem;
   }
 
   .skills-content {
-    padding: 3rem 0;
+    padding: 2rem 0;
+    font-size: var(--normal-font-size);
   }
 
   .skills-box {
     display: flex;
     justify-content: center;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
     flex-direction: row;
   }
 
-  .skills-title {
-    font-size: var(--h3-font-size);
-  }
 
   .portfolio-img {
     width: 429px;
@@ -129,9 +127,17 @@
   .home_social {
     display: none;
   }
+  
+  .skills-content {
+    grid-template-columns: 145px;
+  }
+
+  .skills-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .skills-name {
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
   }
 
   .skills-bar .bar .progress-line {
@@ -162,7 +168,7 @@
   #twitter {
     display: none;
   }
-  
+
   .success-container {
     display: grid;
     width: 100vw;
@@ -172,7 +178,6 @@
 
   .success-message {
     place-self: baseline normal;
-    border: 1px solid red;
   }
 
   .success-message h1 {

@@ -28,6 +28,23 @@ themeButton.addEventListener('click', () => {
 
 
 
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  reset: false
+});
+
+sr.reveal(`.header-info`);
+sr.reveal(`.header-pfp`, {delay: 700});
+sr.reveal(`.home-social, .scroll-link`, {delay: 900, origin: 'bottom'});
+
+
+
 /*========== ˗ˏˋ ✿ P O R T F O L I O   F I L T E R ✿ ´ˎ˗ ==========*/
 let filteredPortfolio = mixitup('.portfolio-container', {
   selectors: {

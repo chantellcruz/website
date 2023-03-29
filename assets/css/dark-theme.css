@@ -131,6 +131,22 @@ body.dark-theme {
     color: var(--dark-primary-color);
 }
 
+.dark-theme .social-link {
+    background-color: var(--dark-container-color);
+}
+
+.dark-theme .social-link:hover {
+    background-color: var(--dark-primary-color);
+}
+
+.dark-theme .home-social::after {
+    background-color: var(--dark-container-accent);
+}
+
+.dark-theme .home-scroll a {
+    color: var(--dark-primary-color);
+}
+
 /*==========  ˗ˏˋ ✿ A B O U T ✿ ´ˎ˗ ==========*/
 .dark-theme .about-pitch {
     color: var(--dark-font-white);
@@ -143,7 +159,7 @@ body.dark-theme {
 }
 
 .dark-theme .skills-title {
-    background-color: var(--dark-container-color);
+    color: var(--dark-primary-color);
 }
 
 .dark-theme .skills-bar .bar .progress-line {
@@ -156,6 +172,10 @@ body.dark-theme {
 
 .dark-theme .skills-name {
     color: var(--dark-font-white);
+}
+
+.dark-theme .skills .bx-badge-check {
+    color: var(--dark-primary-color);
 }
 
 /*==========  ˗ˏˋ ✿ P O R T F O L I O ✿ ´ˎ˗ ==========*/

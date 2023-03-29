@@ -68,6 +68,10 @@ body {
   transition: .4s;
 }
 
+.website {
+  transition: .8s;
+}
+
 body,
 button,
 input,
@@ -104,7 +108,7 @@ p a:hover {
 }
 
 .section {
-  padding: 6rem 0 1rem;
+  padding: 4rem 0 1rem;
 }
 
 .section-title {
@@ -184,17 +188,10 @@ p a:hover {
 }
 
 /*==========  ˗ˏˋ ✿ H E A D E R ✿ ´ˎ˗ ==========*/
-.header-container {
-  row-gap: 2.5rem;
+.header__container {
   position: relative;
-  align-items: center;
-  column-gap: 4rem;
-}
-
-.pfp {
-  width: 360px;
-  border-radius: 360px;
-  justify-self: center;
+  row-gap: 4.5rem;
+  padding-top: 0rem;
 }
 
 .header-info {
@@ -225,6 +222,80 @@ p a:hover {
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 2.5em;
+}
+
+.header-pfp {
+  justify-self: center;
+  width: 360px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home__img {
+
+  width: 160px;
+
+}
+
+.pfp {
+  width: 360px;
+  border-radius: 360px;
+}
+
+.home-social,
+.home-scroll {
+  position: absolute;
+
+}
+
+.home-social {
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: .5rem;
+}
+
+.social-link {
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--primary-color);
+  padding: .25rem;
+  border-radius: .25rem;
+  display: flex;
+  font-size: 1rem;
+  transition: .4s;
+}
+
+.social-link:hover {
+  background-color: var(--container-color-accent);
+}
+
+.home-social::after {
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform: rotate(90deg) translate(16px, 3px);
+}
+
+.home-scroll {
+  color: var(--primary-color);
+  right: -1.5rem;
+  bottom: 4rem;
+  display: grid;
+  row-gap: 2.25rem;
+  justify-items: center;
+}
+
+.home-scroll-icon {
+  font-size: 1.25rem;
+}
+
+.scroll-down-text {
+  font-size: var(--smaller-font-size);
+  transform: rotate(-90deg);
 }
 
 /*==========  ˗ˏˋ ✿ A B O U T ✿ ´ˎ˗ ==========*/
@@ -300,7 +371,7 @@ p a:hover {
 
 .skills .bx-badge-check {
   font-size: 1rem;
-  color: var(--primary-color-alt);
+  color: var(--secondary-color);
 }
 
 .skills-name {
@@ -384,8 +455,8 @@ p a:hover {
 }
 
 .portfolio-icon {
-   font-size: 1rem;
-   transition: .4s;
+  font-size: 1rem;
+  transition: .4s;
 }
 
 .active-filter {
