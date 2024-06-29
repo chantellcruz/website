@@ -568,6 +568,7 @@ p a:hover {
 
 /*==========  ˗ˏˋ ✿ F O O T E R ✿ ´ˎ˗ ==========*/
 .footer {
+  margin-top: 8rem;
   background-color: var(--primary-color);
 }
 
